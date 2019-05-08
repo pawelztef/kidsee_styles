@@ -1,0 +1,41 @@
+.form-group {
+    position: relative;
+}
+
+.form-group i {
+    top: 12px;
+    left: 13px;
+}
+
+.form-label {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    transition: 0.2s;
+    padding: 0px 10px;
+    border-radius: 100px !important;
+}
+
+.form-label-focus {
+    font-size: 11px;
+    top: -8px;
+    background: #fff;
+}
+
+input,
+button {
+    border-radius: 100px !important;
+}
+
+#show {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 8px;
+}
+
+.uk-button-primary:disabled {
+    opacity: 0.6;
+    background-color: #1e87f0 !important;
+    color: #fff;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Panel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/uikit.min.css" />
+		<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/uikit.min.js" ></script>
+    	<script src="js/uikit-icons.min.js" ></script>
+    </head>
+    <body>
+        <div uk-sticky class="uk-navbar-container tm-navbar-container uk-active">
+            <div class="uk-container uk-container-expand">
+                <nav uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a id="sidebar_toggle" class="uk-navbar-toggle" uk-navbar-toggle-icon ></a>
+                        <a href="#" class="uk-navbar-item uk-logo">
+                            LOGO
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right uk-light">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active">
+                                <a href="#">Nazwa przedszkola &nbsp;<span class="ion-ios-arrow-down"></span></a>
+                                <div uk-dropdown="pos: bottom-right; mode: click; offset: -17;">
+                                   <ul class="uk-nav uk-navbar-dropdown-nav">
+                                       <li class="uk-nav-header">Options</li>
+                                       <li><a href="#">Edit Profile</a></li>
+                                       <li class="uk-nav-header">Actions</li>
+                                       <li><a href="#">Lock</a></li>
+                                       <li><a href="#">Logout</a></li>
+                                   </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="sidebar" class="tm-sidebar-left uk-background-default">
+            <ul class="uk-nav uk-nav-default">
+
+                <li class="uk-nav-header">
+                    UI Elements
+                </li>
+                <li><a href="#">Buttons</a></li>
+                <li><a href="#">Components</a></li>
+                <li><a href="#">Tables</a></li>
+
+                <li class="uk-nav-header">
+                    Pages
+                </li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Article</a></li>
+	        <li><a href="404.html">404</a></li>
+            </ul>
+        </div>
+        <div class="content-padder content-background">
+            <div class="uk-section-default">
+                <div class="uk-container">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><span href="">Dashboard</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="uk-section-small">
+                <div class="uk-container uk-container-large">
+                    <div uk-grid class="uk-child-width-1-1@s uk-child-width-1-1@l">
+                        <div>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-overflow-auto">
+                                    <table class="uk-table uk-table-hover uk-table-divider uk-table-small">
+                                        <thead>
+                                            <tr>
+                                                <th class="uk-table-shrink"></th>
+                                                <th class="uk-table-shrink">Preserve</th>
+                                                <th class="uk-table-expand">Expand + Link</th>
+                                                <th class="uk-width-small">Truncate</th>
+                                                <th class="uk-table-shrink uk-text-nowrap">Shrink + Nowrap</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                                                <td class="uk-table-link">
+                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                </td>
+                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                <td class="uk-text-nowrap"><button class="uk-button uk-button-primary uk-button-small" type="button">Button</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                                                <td class="uk-table-link">
+                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                </td>
+                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                <td class="uk-text-nowrap"><button class="uk-button uk-button-primary uk-button-small" type="button">Button</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                                                <td class="uk-table-link">
+                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                </td>
+                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                <td class="uk-text-nowrap"><button class="uk-button uk-button-primary uk-button-small" type="button">Button</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input class="uk-checkbox" type="checkbox"></td>
+                                                <td><img class="uk-preserve-width uk-border-circle" src="images/avatar.jpg" width="40" alt=""></td>
+                                                <td class="uk-table-link">
+                                                    <a class="uk-link-reset" href="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</a>
+                                                </td>
+                                                <td class="uk-text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</td>
+                                                <td class="uk-text-nowrap"><button class="uk-button uk-button-primary uk-button-small" type="button">Button</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js" integrity="sha256-rqEXy4JTnKZom8mLVQpvni3QHbynfjPmPxQVsPZgmJY=" crossorigin="anonymous"></script>
+		<!-- Required Overall Script -->
+        <script src="js/navpanel.js"></script>
+    </body>
+</html>
